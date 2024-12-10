@@ -35,9 +35,6 @@ class Main {
             case "*":
                 return String.valueOf(a * b);
             case "/":
-                if (b == 0) {
-                    throw new ArithmeticException("На ноль делить нельзя");
-                }
                 return String.valueOf(a / b);
             default:
                 throw new IllegalArgumentException("Неподдерживаемая операция: " + operation);
